@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import logo from './assets/letterboxd-mac-icon.png'
+import { StyleSheet, Text, View,Image } from 'react-native';
+import Search from './components/Search';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Search/>
     </View>
   );
 }
@@ -18,4 +19,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  logo : {
+    width:150, height:150
+  },
+  hello:{
+    fontSize:20, fontWeight:"200", 
+    justifyContent: 'center',
+  }
 });
